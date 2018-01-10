@@ -18,7 +18,23 @@ html {
 }
 
 body {
+    font-family: 'Josefin Sans', sans-serif;
     background-color: #F0EFED;
+}
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
 }
 
 header {
@@ -100,6 +116,76 @@ section h2 {
     height: auto;
     min-height: 600px;
     background-color: #fff;
+    box-shadow: 0 2px 2px rgba(59,89,178,0.15);
+}
+
+.post-content {
+    margin-top: 30px;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.post-date {
+    width: 45px;
+    border-right: 1px solid #ebebeb;
+}
+
+.post-day {
+    font-size: 15px;
+    font-weight: 600;
+    color: #303030;
+    display: flex;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-month {
+    font-size: 16px;
+    font-weight: 400;
+    color: #706A6A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-info {
+    width: 268px;
+}
+
+.post-info h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #706A6A;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    min-height: 48px;
+    height: auto;
+}
+
+.btn-leiamais {
+    margin-top: 15px;
+    height: 30px;
+    width: 120px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #C9191B;
+}
+
+.post-info p {
+    color: #706A6A;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    min-height: 216px;
+    height: auto;
 }
 
 .divider {
@@ -161,4 +247,38 @@ footer iframe {
     font-weight: 400;
     line-height: 26px;
     text-decoration: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1230px){
+	main,
+	.wrapper-footer{
+		width: 968px;
+	}
+	.post-info{
+		width: 210px;
+	}
+	.post-info p{
+		font-size: 14px;
+		min-height: 239px;
+	}
+	.post-info h4{
+		min-height: 69px;
+	}
+	.coluna-post{
+		width: 300px;
+	}
+	.coluna-footer{
+		width: 300px;
+	}
+	.coluna-footer p{
+		font-size: 14px;
+	}
+	footer iframe{
+		width: 100% !important;
+		height: 300px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
 }
